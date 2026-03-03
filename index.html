@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Original+Surfer&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <div class="logo">
+                <a href=""><img src="./image/logo-removebg-preview.webp" alt=" Logo"></a>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <div class="dropdown">
+                        <li><a href="./index.html">Home</a></li>
+                        <div class="dropdown-content">
+                            <li><a href="./home2.html">Home2</a></li>
+                        </div>
+                    </div>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./Menu.html">Menu</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <div class="nav-btn">
+                        <a href="./login.html" class="login-btn">Login</a>
+                    </div>
+
+                </ul>
+            </nav>
+
+
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- section main -->
+
+    <section class="hero">
+        <div class="hero-slider">
+
+            <div class="slide active" style="background-image: url('./image/main1.webp');">
+                <div class="hero-content">
+                    <p>Spicy Dinner</p>
+                    <h1>Hot & Spicy Chicken Varieties</h1>
+                    <h3>Where Spice Meets Perfection...
+                        A Fiery Feast for True Food Lovers</h3>
+
+                </div>
+            </div>
+
+            <div class="slide" style="background-image: url('./image/main2.webp');">
+                <div class="hero-content">
+                    <h1>Fresh & Organic</h1>
+                    <p>Healthy food made with love</p>
+                </div>
+            </div>
+
+            <div class="slide" style="background-image: url('./image/main3.webp');">
+                <div class="hero-content">
+                    <h1>Luxury Dining</h1>
+                    <p>Where flavor meets elegance</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Dots -->
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+
+
+    <!-- section popular dish -->
+
+    <section class="popular-dishes">
+        <h2 class="section-title"><span class="span">Popular Dishes Of</span><br>Our Restaurant</h2>
+
+
+        <div class="dishes-wrapper">
+            <div class="dishes-scroll">
+
+                <div class="dish-card">
+                    <img src="./image/grill.webp" alt="Dish 1">
+                    <div class="overlay">
+                        <h3>Grilled Chicken</h3>
+                        <a href="./error.html"><button>Order Now</button></a>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <img src="./image/pizza.webp" alt="Dish 2">
+                    <div class="overlay">
+                        <h3>Veg Pizza</h3>
+                        <a href="./error.html"><button>Order Now</button></a>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <img src="./image/burger.webp" alt="Dish 3">
+                    <div class="overlay">
+                        <h3>Burger Combo</h3>
+                        <a href="./error.html"><button>Order Now</button></a>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <img src="./image/pasta.webp" alt="Dish 4">
+                    <div class="overlay">
+                        <h3>Pasta Delight</h3>
+                        <a href="./error.html"><button>Order Now</button></a>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <img src="./image/fried-rice.webp" alt="Dish 5">
+                    <div class="overlay">
+                        <h3>Fried Rice</h3>
+                        <a href="./error.html"><button>Order Now</button></a>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <img src="./image/paneer.webp" alt="Dish 6">
+                    <div class="overlay">
+                        <h3>Paneer Tikka</h3>
+                        <a href="./error.html"><button>Order Now</button></a>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <img src="./image/wings.webp" alt="Dish 7">
+                    <div class="overlay">
+                        <h3>BBQ Wings</h3>
+                        <a href="./error.html"><button>Order Now</button></a>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <img src="./image/naan.webp" alt="Dish 8">
+                    <div class="overlay">
+                        <h3>Garlic Naan</h3>
+                        <a href="./error.html"><button>Order Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- section offer -->
+
+    <section class="offer-section">
+        <div class="offer-content">
+            <h4>Upto 25% off</h4>
+            <h1>On Italian, Mexican, And Indian Cuisine</h1>
+            <p>
+                Enjoy delicious flavors crafted by our expert chefs.
+                Experience authentic taste with premium ingredients and
+                a fine dining atmosphere made just for you.
+            </p>
+            <a href="#" class="offer-btn">Grab Your Offer</a>
+        </div>
+    </section>
+
+
+    <!-- section unique -->
+
+    <section class="favorite-section">
+
+        <p class="small-title">Favorite Items</p>
+        <h2 class="main-title">For Unique Dining</h2>
+
+
+        <div class="category-buttons">
+            <button class="category" data-category="asian">Asian</button>
+            <button class="category" data-category="italian">Italian</button>
+            <button class="category" data-category="chinese">Chinese</button>
+            <button class="category" data-category="american">American</button>
+        </div>
+
+
+        <div class="dishes-container" id="dishesContainer">
+
+        </div>
+
+    </section>
+
+
+    <!-- section image -->
+
+    <section class="scroll-gallery">
+    <div class="scroll-track">
+
+        <img src="./image/alfredo.webp" alt="Gallery image">
+        <img src="./image/carbonara.webp" alt="Gallery image">
+        <img src="./image/fried-rice.webp" alt="Gallery image">
+        <img src="./image/grill.webp" alt="Gallery image">
+        <img src="./image/gnocchi.webp" alt="Gallery image">
+        <img src="./image/lasagna.webp" alt="Gallery image">
+        <img src="./image/naan.webp" alt="Gallery image">
+        <img src="./image/wings.webp" alt="Gallery image">
+        <img src="./image/rolls.webp" alt="Gallery image">
+        <img src="./image/burger.webp" alt="Gallery image">
+        <img src="./image/bun.webp" alt="Gallery image">
+        <img src="./image/milkshake.webp" alt="Gallery image">
+
+
+        <img src="./image/alfredo.webp" alt="Gallery image">
+        <img src="./image/carbonara.webp" alt="Gallery image">
+        <img src="./image/fried-rice.webp" alt="Gallery image">
+        <img src="./image/grill.webp" alt="Gallery image">
+        <img src="./image/gnocchi.webp" alt="Gallery image">
+        <img src="./image/lasagna.webp" alt="Gallery image">
+        <img src="./image/naan.webp" alt="Gallery image">
+        <img src="./image/wings.webp" alt="Gallery image">
+        <img src="./image/rolls.webp" alt="Gallery image">
+        <img src="./image/burger.webp" alt="Gallery image">
+        <img src="./image/bun.webp" alt="Gallery image">
+        <img src="./image/milkshake.webp" alt="Gallery image">
+    </div>
+</section>
+
+<!-- section app store -->
+
+<section class="app-section">
+    <div class="app-container">
+
+        <!-- Left Content -->
+        <div class="app-content">
+            <h5>Reach Us</h5>
+            <h2>Get Our Exciting Food Delivery App</h2>
+            <p>
+                Enjoy your favorite dishes delivered straight to your doorstep. 
+                Fresh ingredients, hot meals, and quick delivery service. 
+                Order anytime and experience the best taste with just one tap.
+            </p>
+
+            <div class="store-buttons">
+                <a href="./error.html">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+                </a>
+                <a href="./error.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+                </a>
+            </div>
+        </div>
+
+        
+        <div class="app-image">
+            <img src="./image/phone.webp" alt="Food App Phone">
+        </div>
+
+    </div>
+</section>
+
+
+<!-- section events -->
+
+<section class="news-section">
+    <div class="container">
+
+        <div class="section-title">
+            <h5>News And Events</h5>
+            <h2>Latest From Our Restaurant</h2>
+            <p>
+                Explore our latest food stories, cooking tips, and restaurant updates.
+                Stay connected with our delicious journey.
+            </p>
+        </div>
+
+        <div class="news-wrapper">
+            <button class="arrow left" onclick="slideLeft()">&#10094;</button>
+
+            <div class="news-slider" id="newsSlider">
+
+            
+                <div class="news-card">
+                    <img src="./image/fish.webp" alt="">
+                    <div class="news-content">
+                        <span>Jun 21 | Viyaan</span>
+                        <h3>What are most common food handling mistakes?</h3>
+                        <p>Learn the important safety measures every kitchen must follow.</p>
+                        <a href="./error.html">Read More</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="./image/dish.webp" alt="">
+                    <div class="news-content">
+                        <span>Mar 9 | Riya</span>
+                        <h3>Explore new dishes and menus with besties</h3>
+                        <p>Discover exciting new flavors crafted by our expert chefs.</p>
+                        <a href="./error.html">Read More</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="./image/fried-rice.webp" alt="">
+                    <div class="news-content">
+                        <span>Apr 10 | Mathew</span>
+                        <h3>What gives good atmosphere for a restaurant?</h3>
+                        <p>Ambience, lighting and music create memorable dining moments.</p>
+                        <a href="./error.html">Read More</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="./image/grill.webp" alt="">
+                    <div class="news-content">
+                        <span>Jun 30 | John</span>
+                        <h3>The ultimate guide to cook international style foods</h3>
+                        <p>Master global cuisines with our professional tips.</p>
+                        <a href="./error.html">Read More</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="./image/soup.webp" alt="">
+                    <div class="news-content">
+                        <span>Jun 30 | Viky</span>
+                        <h3>How to learn advanced cooking techniques</h3>
+                        <p>Upgrade your culinary skills like a professional chef.</p>
+                        <a href="./error.html">Read More</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="./image/rolls.webp" alt="">
+                    <div class="news-content">
+                        <span>Dec 15 | Priya</span>
+                        <h3>The health benefits of eating Italian food</h3>
+                        <p>Italian cuisine offers both flavor and nutrition.</p>
+                        <a href="./error.html">Read More</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="./image/prawn.webp" alt="">
+                    <div class="news-content">
+                        <span>Sep 25 | Arjun</span>
+                        <h3>How prawn pasta is made & is it good for kids?</h3>
+                        <p>Step-by-step recipe and nutrition facts explained.</p>
+                        <a href="./error.html">Read More</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="./image/pizza.webp" alt="">
+                    <div class="news-content">
+                        <span>Dec 9 | Kavin</span>
+                        <h3>10 Classic and simple meat lasagna recipes</h3>
+                        <p>Traditional Italian recipes you can try at home.</p>
+                        <a href="./error.html">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="arrow right" onclick="slideRight()">&#10095;</button>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- section review -->
+
+<section class="review-section">
+    <div class="review-container">
+
+        <h5>Customer Reviews</h5>
+        <h2>What Our Guests Say</h2>
+
+        <div class="review-slider" id="reviewSlider">
+
+            <!-- Review 1 -->
+            <div class="review-card">
+                <p>"Absolutely delicious food and amazing service. Highly recommended!"</p>
+                <div class="stars">★★★★★</div>
+                <h4>Priya Sharma</h4>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <p>"The ambience was beautiful and the pasta tasted authentic."</p>
+                <div class="stars">★★★★★</div>
+                <h4>Rahul Verma</h4>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <p>"Best biryani in town! Loved the quick delivery service."</p>
+                <div class="stars">★★★★☆</div>
+                <h4>Anjali Menon</h4>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card">
+                <p>"The desserts were heavenly and presentation was perfect."</p>
+                <div class="stars">★★★★★</div>
+                <h4>Arun Kumar</h4>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="review-card">
+                <p>"Very friendly staff and cozy atmosphere."</p>
+                <div class="stars">★★★★☆</div>
+                <h4>Sneha Reddy</h4>
+            </div>
+
+            <!-- Review 6 -->
+            <div class="review-card">
+                <p>"Loved the seafood platter. Fresh and flavorful."</p>
+                <div class="stars">★★★★★</div>
+                <h4>Karthik Raj</h4>
+            </div>
+
+            <!-- Review 7 -->
+            <div class="review-card">
+                <p>"Affordable prices and great taste. Will visit again."</p>
+                <div class="stars">★★★★☆</div>
+                <h4>Divya Nair</h4>
+            </div>
+
+            <!-- Review 8 -->
+            <div class="review-card">
+                <p>"Five-star experience from start to finish."</p>
+                <div class="stars">★★★★★</div>
+                <h4>Vikram Singh</h4>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script>
+const slider = document.getElementById('reviewSlider');
+
+let isDown = false;
+let startX;
+let scrollLeft;
+let index = 0;
+const totalSlides = slider.children.length;
+
+slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX;
+});
+
+slider.addEventListener('mouseleave', () => {
+    isDown = false;
+});
+
+slider.addEventListener('mouseup', (e) => {
+    if (!isDown) return;
+    isDown = false;
+    let move = e.pageX - startX;
+
+    if (move < -50 && index < totalSlides - 1) {
+        index++;
+    } else if (move > 50 && index > 0) {
+        index--;
+    }
+
+    slider.style.transform = `translateX(-${index * 100}%)`;
+});
+
+slider.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchend', (e) => {
+    let move = e.changedTouches[0].clientX - startX;
+
+    if (move < -50 && index < totalSlides - 1) {
+        index++;
+    } else if (move > 50 && index > 0) {
+        index--;
+    }
+
+    slider.style.transform = `translateX(-${index * 100}%)`;
+});
+</script>
+
+<script>
+const slider = document.getElementById("newsSlider");
+
+function slideLeft() {
+    slider.scrollLeft -= 350;
+}
+
+function slideRight() {
+    slider.scrollLeft += 350;
+}
+</script>
+
+    <script>
+        const dishesData = {
+            asian: [
+                { name: "Sushi Rolls", desc: "Fresh salmon sushi rolls.", img: "./image/rolls.webp" },
+                { name: "Pad Thai", desc: "Thai stir fried noodles.", img: "./image/soup.webp" },
+                { name: "Ramen", desc: "Japanese noodle soup.", img: "./image/ramen.webp" },
+                { name: "Dumplings", desc: "Steamed chicken dumplings.", img: "./image/dump.webp" },
+                { name: "Teriyaki Chicken", desc: "Sweet soy glazed chicken.", img: "./image/teriyaki.webp" },
+                { name: "Kimchi Rice", desc: "Korean spicy rice.", img: "./image/kimchi.webp" },
+                { name: "Fried Rice", desc: "Classic egg fried rice.", img: "./image/fried-rice.webp" },
+                { name: "Spring Rolls", desc: "Crispy vegetable rolls.", img: "./image/spring.webp" }
+            ],
+            italian: [
+                { name: "Margherita Pizza", desc: "Classic Italian pizza.", img: "./image/pizza.webp" },
+                { name: "Pasta Alfredo", desc: "Creamy white sauce pasta.", img: "./image/alfredo.webp" },
+                { name: "Lasagna", desc: "Layered pasta delight.", img: "./image/lasagna.webp" },
+                { name: "Risotto", desc: "Creamy rice dish.", img: "./image/risotto.webp" },
+                { name: "Bruschetta", desc: "Grilled bread starter.", img: "./image/bruschetta.webp" },
+                { name: "Carbonara", desc: "Egg & cheese pasta.", img: "./image/carbonara.webp" },
+                { name: "Tiramisu", desc: "Coffee flavored dessert.", img: "./image/tiramisu.webp" },
+                { name: "Gnocchi", desc: "Soft potato pasta.", img: "./image/gnocchi.webp" }
+            ],
+            chinese: [
+                { name: "Kung Pao Chicken", desc: "Spicy Sichuan dish.", img: "./image/kung.webp" },
+                { name: "Sweet & Sour Pork", desc: "Tangy pork dish.", img: "./image/pork.webp" },
+                { name: "Chow Mein", desc: "Stir fried noodles.", img: "./image/mein.webp" },
+                { name: "Spring Rolls", desc: "Crispy rolls.", img: "./image/rolls.webp" },
+                { name: "Mapo Tofu", desc: "Spicy tofu dish.", img: "./image/tofu.webp" },
+                { name: "Fried Dumplings", desc: "Pan fried dumplings.", img: "./image/dump.webp" },
+                { name: "Hot & Sour Soup", desc: "Spicy soup.", img: "./image/soup.webp" },
+                { name: "Peking Duck", desc: "Roasted duck slices.", img: "./image/duck.webp" }
+            ],
+            american: [
+                { name: "Cheeseburger", desc: "Classic beef burger.", img: "./image/burger.webp" },
+                { name: "BBQ Ribs", desc: "Smoky pork ribs.", img: "./image/wings.webp" },
+                { name: "Fried Chicken", desc: "Crispy chicken.", img: "./image/grill.webp" },
+                { name: "Hot Dog", desc: "Grilled sausage bun.", img: "./image/bun.webp" },
+                { name: "Mac & Cheese", desc: "Creamy pasta.", img: "./image/pasta.webp" },
+                { name: "Pancakes", desc: "Fluffy breakfast.", img: "./image/pancake.webp" },
+                { name: "Steak", desc: "Juicy grilled steak.", img: "./image/steak.webp" },
+                { name: "Milkshake", desc: "Thick chocolate shake.", img: "./image/milkshake.webp" }
+            ]
+        };
+
+        const buttons = document.querySelectorAll(".category");
+        const container = document.getElementById("dishesContainer");
+
+        // Load dishes
+        function loadDishes(category) {
+            container.innerHTML = "";
+            dishesData[category].forEach(dish => {
+                container.innerHTML += `
+            <div class="dish-item">
+                <div class="dish-text">
+                    <h4>${dish.name}</h4>
+                    <p>${dish.desc}</p>
+                </div>
+                <div class="dish-img">
+                    <img src="${dish.img}" alt="${dish.name}">
+                </div>
+            </div>
+        `;
+            });
+        }
+
+        // Default load
+        loadDishes("asian");
+
+        // Button click
+        buttons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelector(".active").classList.remove("active");
+                btn.classList.add("active");
+                loadDishes(btn.dataset.category);
+            });
+        });
+    </script>
+
+
+
+
+    <script>
+        const slider = document.querySelector(".hero-slider");
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
+
+        let index = 0;
+        let startX = 0;
+        let autoSlideInterval;
+
+        // Update Slide
+        function updateSlide() {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+            dots.forEach(dot => dot.classList.remove("active"));
+            dots[index].classList.add("active");
+        }
+
+        // Dot Click
+        dots.forEach((dot, i) => {
+            dot.addEventListener("click", () => {
+                index = i;
+                updateSlide();
+                resetAutoSlide();
+            });
+        });
+
+        // Swipe Support
+        slider.addEventListener("touchstart", e => {
+            startX = e.touches[0].clientX;
+        });
+
+        slider.addEventListener("touchend", e => {
+            let endX = e.changedTouches[0].clientX;
+            handleSwipe(endX);
+        });
+
+        function handleSwipe(endX) {
+            if (startX - endX > 50) {
+                index = (index + 1) % slides.length;
+            } else if (endX - startX > 50) {
+                index = (index - 1 + slides.length) % slides.length;
+            }
+            updateSlide();
+            resetAutoSlide();
+        }
+
+        // Slower Auto Slide (8 seconds)
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(() => {
+                index = (index + 1) % slides.length;
+                updateSlide();
+            }, 8000); // 8 seconds
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+
+        startAutoSlide();
+    </script>
+
+
+
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector(".nav-menu");
+
+        toggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>
