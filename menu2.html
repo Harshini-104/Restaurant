@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./menu2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Original+Surfer&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amarante&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Original+Surfer&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <div class="logo">
+                <a href=""><img src="./image/logo-removebg-preview.webp" alt=" Logo"></a>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="./home2.html">Home</a></li>
+                    <li><a href="./about2.html">About</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./blog2.html">Blog</a></li>
+                    <li><a href="./dashboard2.html">Dashboard</a></li>
+                    <li><a href="./contact2.html">Contact</a></li>
+                    <div class="nav-btn">
+                        <a href="./login2.html" class="login-btn">Login</a>
+                    </div>
+
+                </ul>
+            </nav>
+
+
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
+    </header>
+
+        <!-- section main -->
+
+    <section class="menu-hero">
+        <div class="menu-hero-content">
+
+            <h1>Our Delicious Menu</h1>
+
+            <p>
+                Explore our carefully crafted dishes made with fresh ingredients,
+                bold flavors, and passion. From spicy starters to delightful desserts,
+                there’s something for everyone.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- section menu -->
+
+    
+<!-- HEADER -->
+<div class="header">
+    <div class="logo">SpicyBite</div>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search dishes...">
+    </div>
+
+    <div class="cart" onclick="toggleCart()">
+        <i class="fa fa-shopping-cart"></i>
+        <div class="cart-count" id="cartCount">0</div>
+    </div>
+</div>
+
+<!-- MENU -->
+<section class="menu-section">
+    <div class="menu-grid" id="menuGrid"></div>
+</section>
+
+<!-- CART SIDEBAR -->
+<div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <i class="fa fa-times" onclick="toggleCart()" style="cursor:pointer;"></i>
+    </div>
+
+    <div id="cartItems"></div>
+
+    <div class="total">
+        Total: ₹<span id="cartTotal">0</span>
+    </div>
+</div>
+
+<script>
+
+const dishes = [
+    {name:"Chicken Biryani", price:250},
+    {name:"Mutton Curry", price:320},
+    {name:"Paneer Butter Masala", price:220},
+    {name:"Grilled Chicken", price:280},
+    {name:"Veg Fried Rice", price:180},
+    {name:"Chicken Noodles", price:190},
+    {name:"Pizza Margherita", price:299},
+    {name:"Burger Combo", price:199},
+    {name:"Tandoori Chicken", price:350},
+    {name:"Fish Fry", price:270},
+    {name:"Masala Dosa", price:120},
+    {name:"Idli Sambar", price:80},
+    {name:"Pasta Alfredo", price:240},
+    {name:"Chocolate Cake", price:150},
+    {name:"Ice Cream Sundae", price:130},
+    {name:"Fresh Lime Juice", price:60}
+];
+
+const menuGrid = document.getElementById("menuGrid");
+const cartSidebar = document.getElementById("cartSidebar");
+const cartItemsDiv = document.getElementById("cartItems");
+const cartCount = document.getElementById("cartCount");
+const cartTotal = document.getElementById("cartTotal");
+
+let cart = [];
+
+/* Display Menu */
+function displayMenu(items){
+    menuGrid.innerHTML = "";
+    items.forEach((dish,index)=>{
+        menuGrid.innerHTML += `
+            <div class="menu-card">
+                <img src="https://source.unsplash.com/400x300/?food,${index}" />
+                <div class="menu-content">
+                    <h3>${dish.name}</h3>
+                    <div class="price">₹${dish.price}</div>
+                    <button class="add-btn" onclick="addToCart(${index})">Add to Cart</button>
+                </div>
+            </div>
+        `;
+    });
+}
+
+/* Add To Cart */
+function addToCart(index){
+    const dish = dishes[index];
+    const existing = cart.find(item => item.name === dish.name);
+
+    if(existing){
+        existing.quantity++;
+    } else {
+        cart.push({...dish, quantity:1});
+    }
+
+    updateCart();
+    toggleCart();
+}
+
+/* Update Cart UI */
+function updateCart(){
+    cartItemsDiv.innerHTML = "";
+    let total = 0;
+    let count = 0;
+
+    cart.forEach(item=>{
+        total += item.price * item.quantity;
+        count += item.quantity;
+
+        cartItemsDiv.innerHTML += `
+            <div class="cart-item">
+                <div>
+                    <strong>${item.name}</strong><br>
+                    ₹${item.price} x ${item.quantity}
+                </div>
+                <div>₹${item.price * item.quantity}</div>
+            </div>
+        `;
+    });
+
+    cartTotal.textContent = total;
+    cartCount.textContent = count;
+}
+
+/* Toggle Cart */
+function toggleCart(){
+    cartSidebar.classList.toggle("active");
+}
+
+/* Search */
+document.getElementById("searchInput").addEventListener("keyup",function(){
+    const value = this.value.toLowerCase();
+    const filtered = dishes.filter(dish =>
+        dish.name.toLowerCase().includes(value)
+    );
+    displayMenu(filtered);
+});
+
+displayMenu(dishes);
+
+</script>
+
+
+
+
+
+
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector(".nav-menu");
+
+        toggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>

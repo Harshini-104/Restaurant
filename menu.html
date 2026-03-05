@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Original+Surfer&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amarante&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Original+Surfer&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quintessential&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amarante&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Original+Surfer&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <div class="logo">
+                <a href=""><img src="./image/logo-removebg-preview.webp" alt=" Logo"></a>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./Menu.html">Menu</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <div class="nav-btn">
+                        <a href="./login.html" class="login-btn">Login</a>
+                    </div>
+
+                </ul>
+            </nav>
+
+
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- section main -->
+
+    <section class="menu-hero">
+        <div class="menu-hero-content">
+
+            <h1 data-aos="zoom-in">Our Delicious Menu</h1>
+
+            <p data-aos="zoom-in">
+                Explore our carefully crafted dishes made with fresh ingredients,
+                bold flavors, and passion. From spicy starters to delightful desserts,
+                there’s something for everyone.
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- section menu -->
+
+    <div class="menu-container">
+
+
+        <div class="sidebar">
+            <h3 data-aos="zoom-in">Categories</h3>
+            <ul>
+                <li class="active" onclick="filterItems('all')">All</li>
+                <li onclick="filterItems('main')">Main Courses</li>
+                <li onclick="filterItems('soups')">Soups</li>
+                <li onclick="filterItems('desserts')">Desserts</li>
+                <li onclick="filterItems('beverages')">Beverages</li>
+            </ul>
+
+        </div>
+
+
+
+
+        <div class="products">
+
+
+
+            <div class="card main" data-aos="zoom-in">
+                <img src="./image/fries.webp">
+                <span class="badge">95% OFF</span>
+                <h4>French Fries</h4>
+                <p class="price">Rs. 400</p>
+                <p class="review">⭐ 2 Reviews</p>
+            </div>
+
+            <div class="card main" data-aos="zoom-in">
+                <img src="./image/fried-chicken.webp">
+                <h4>Fried Chicken</h4>
+                <p class="price">Rs. 600</p>
+                <p class="review">⭐ 2 Reviews</p>
+            </div>
+
+            <div class="card main">
+                <img src="./image/pizza.webp" data-aos="zoom-in">
+                <h4>Pizza With Salami Cheese</h4>
+                <p class="price">Rs. 700</p>
+                <p class="review">⭐ 3 Reviews</p>
+            </div>
+
+            <div class="card main">
+                <img src="./image/beef.webp" data-aos="zoom-in">
+                <span class="badge">50% OFF</span>
+                <h4>Mexican Tacos With Beef</h4>
+                <p class="price">Rs. 200</p>
+                <p class="review">⭐ 1 Review</p>
+            </div>
+
+            <div class="card main">
+                <img src="./image/naan.webp" data-aos="zoom-in">
+                <h4>Naan With Garlic Seasoning</h4>
+                <p class="price">Rs. 400</p>
+                <p class="review">⭐ 1 Review</p>
+            </div>
+
+            <div class="card main">
+                <img src="./image/noodle.webp" data-aos="zoom-in">
+                <h4>Noodles</h4>
+                <p class="price">Rs. 500</p>
+                <p class="review">⭐ 1 Review</p>
+            </div>
+
+            <div class="card soups">
+                <img src="./image/soup.webp" data-aos="zoom-in">
+                <h4>Hot & Sour Soup</h4>
+                <p class="price">Rs. 250</p>
+                <p class="review">⭐ 2 Reviews</p>
+            </div>
+
+            <div class="card soups">
+                <img src="./image/tomato.webp" data-aos="zoom-in">
+                <h4>Tomato Soup</h4>
+                <p class="price">Rs. 200</p>
+                <p class="review">⭐ 1 Review</p>
+            </div>
+
+            <div class="card desserts">
+                <img src="./image/pancake.webp" data-aos="zoom-in">
+                <h4>Chocolate Cake</h4>
+                <p class="price">Rs. 300</p>
+                <p class="review">⭐ 4 Reviews</p>
+            </div>
+
+            <div class="card desserts">
+                <img src="./image/ice.webp" data-aos="zoom-in">
+                <h4>Vanilla Ice Cream</h4>
+                <p class="price">Rs. 150</p>
+                <p class="review">⭐ 2 Reviews</p>
+            </div>
+
+            <div class="card desserts" data-aos="zoom-in">
+                <img src="./image/chocolate-brownie.webp">
+                <h4>Brownie</h4>
+                <p class="price">Rs. 220</p>
+                <p class="review">⭐ 3 Reviews</p>
+            </div>
+
+            <div class="card beverages" data-aos="zoom-in">
+                <img src="./image/cocktail.webp">
+                <h4>Cocktail</h4>
+                <p class="price">Rs. 500</p>
+                <p class="review">⭐ 2 Reviews</p>
+            </div>
+
+            <div class="card beverages" data-aos="zoom-in">
+                <img src="./image/soda.webp">
+                <h4>Iced Diet Lemon Soda</h4>
+                <p class="price">Rs. 200</p>
+                <p class="review">⭐ 1 Review</p>
+            </div>
+
+            <div class="card beverages" data-aos="zoom-in">
+                <img src="./image/margarita.webp">
+                <h4>Margarita</h4>
+                <p class="price">Rs. 400</p>
+                <p class="review">⭐ 1 Review</p>
+            </div>
+
+            <div class="card main" data-aos="zoom-in">
+                <img src="./image/wings.webp">
+                <h4>Grilled Chicken Wings</h4>
+                <p class="price">Rs. 400</p>
+                <p class="review">⭐ 2 Reviews</p>
+            </div>
+
+            <div class="card main" data-aos="zoom-in">
+                <img src="./image/calamari.webp">
+                <h4>Italian Fried Calamari</h4>
+                <p class="price">Rs. 200</p>
+                <p class="review">⭐ 1 Review</p>
+            </div>
+
+            <div class="card main" data-aos="zoom-in">
+                <img src="./image/egg.webp">
+                <h4>Hot Spicy Egg Noodles</h4>
+                <p class="price">Rs. 300</p>
+                <p class="review">⭐ 1 Review</p>
+            </div>
+
+          
+
+            <div class="card soups" data-aos="zoom-in">
+                <img src="./image/soup.webp">
+                <h4>Chicken Soup</h4>
+                <p class="price">Rs. 280</p>
+                <p class="review">⭐ 2 Reviews</p>
+            </div>
+
+            <div class="card desserts" data-aos="zoom-in">
+                <img src="./image/delight.webp">
+                <h4>Strawberry Delight</h4>
+                <p class="price">Rs. 320</p>
+                <p class="review">⭐ 3 Reviews</p>
+            </div>
+
+            <div class="card beverages" data-aos="zoom-in">
+                <img src="./image/orange.webp">
+                <h4>Orange Juice</h4>
+                <p class="price">Rs. 180</p>
+                <p class="review">⭐ 1 Review</p>
+            </div>
+
+            <div class="card beverages" data-aos="zoom-in">
+                <img src="./image/milkshake.webp">
+                <h4>Chocolate Milkshake</h4>
+                <p class="price">Rs. 250</p>
+                <p class="review">⭐ 2 Reviews</p>
+            </div>
+
+            <div class="card main" data-aos="zoom-in">
+                <img src="./image/burger.webp">
+                <h4>Beef Burger</h4>
+                <p class="price">Rs. 350</p>
+                <p class="review">⭐ 2 Reviews</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function filterItems(category) {
+            const items = document.querySelectorAll('.card');
+            const buttons = document.querySelectorAll('.sidebar ul li');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            items.forEach(item => {
+                if (category === 'all') {
+                    item.style.display = 'block';
+                } else {
+                    if (item.classList.contains(category)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        }
+    </script>
+
+    <!-- section footer -->
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="subscribe-section">
+                <h3 data-aos="zoom-in"><i class="fas fa-envelope"></i> Stay Updated with Our Latest Offers</h3>
+                <p data-aos="zoom-in">Subscribe to our newsletter for exclusive recipes, events, and special discounts.</p>
+                <form class="subscribe-form" onsubmit="return false;" data-aos="zoom-in">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+                </form>
+            </div>
+
+
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href=""><img src="./image/logo-removebg-preview.webp" alt=""></a>
+                    <p class="para">Discover authentic flavors at our family-owned restaurant, serving Chennai's finest
+                        cuisine since 2010.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="./index.html#dish">Popular Dish</a></li>
+                        <li><a href="./index.html#offer">Offer</a></li>
+                        <li><a href="./index.html#table">Reserve Table</a></li>
+                        <li><a href="./about.html#history">History</a></li>
+                        <li><a href="./index.html#app">Get App</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4><i class="fas fa-phone"></i> Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Chennai, Tamil Nadu, India</p>
+                        <p><i class="fas fa-phone"></i> +91 12345 67890</p>
+                        <p><i class="fas fa-envelope"></i> stackly@restaurant.com</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="./error.html"><i class="fab fa-facebook-f"></i></a>
+                        <a href="./error.html"><i class="fab fa-instagram"></i></a>
+                        <a href="./error.html"><i class="fab fa-twitter"></i></a>
+                        <a href="./error.html"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+         
+            <div class="logo-section">
+                <p>&copy; 2026 Stackly Restaurant. All rights reserved.</i></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector(".nav-menu");
+
+        toggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
+    </script>
+
+      <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+         once: false,
+        mirror:true,
+      });
+    </script>
+
+</body>
+
+</html>

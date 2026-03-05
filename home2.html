@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./home2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Original+Surfer&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amarante&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Original+Surfer&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <div class="logo">
+                <a href=""><img src="./image/logo-removebg-preview.webp" alt=" Logo"></a>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <div class="dropdown">
+                        <li><a href="./home2.html">Home</a></li>
+                        <div class="dropdown-content">
+                            <li><a href="./index.html">Home1</a></li>
+                        </div>
+                    </div>
+                    <li><a href="./about2.html">About</a></li>
+                    <li><a href="./menu2.html">Menu</a></li>
+                    <li><a href="./blog2.html">Blog</a></li>
+                    <li><a href="./dashboard2.html">Dashboard</a></li>
+                    <li><a href="./contact2.html">Contact</a></li>
+                    <div class="nav-btn">
+                        <a href="./login2.html" class="login-btn">Login</a>
+                    </div>
+
+                </ul>
+            </nav>
+
+
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <section class="hero">
+
+        <div class="slide active"
+            style="background-image:url('./image/error.webp');"></div>
+        <div class="slide"
+            style="background-image:url('./image/egg.webp');"></div>
+        <div class="slide"
+            style="background-image:url('./image/gnocchi.webp');"></div>
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h1>Delicious Food For Every Mood</h1>
+            <p>Fresh Ingredients • Authentic Taste • Cozy Atmosphere</p>
+            <button>Order Now</button>
+        </div>
+
+    </section>
+
+
+    <!-- section about -->
+
+    <!-- ABOUT US SECTION -->
+<section class="about-section">
+    <div class="about-container">
+
+       
+        <div class="about-image">
+            <img src="./image/fish.webp" alt="Restaurant Interior">
+        </div>
+
+      
+        <div class="about-content">
+            <h2>About Stackly Spice House</h2>
+            <p class="subtitle">Where Taste Meets Tradition</p>
+
+            <p>
+                At Stackly Spice House, we believe that food is not just a meal —
+                it's an experience. Our chefs combine fresh ingredients,
+                authentic spices, and modern techniques to create dishes
+                that delight every sense.
+            </p>
+
+            <p>
+                From sizzling starters to mouth-watering main courses and
+                delightful desserts, every plate is crafted with passion.
+                We focus on quality, hygiene, and a warm atmosphere
+                that makes you feel at home.
+            </p>
+
+            <button>Explore Our Menu</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- section stat -->
+
+<!-- STATS SECTION -->
+<section class="stats-section">
+
+    <div class="stats-box">
+
+        <div class="stat">
+            <h2>15+</h2>
+            <p>Years of Experience</p>
+        </div>
+
+        <div class="stat">
+            <h2>5000+</h2>
+            <p>Happy Customers</p>
+        </div>
+
+        <div class="stat">
+            <h2>120+</h2>
+            <p>Delicious Dishes</p>
+        </div>
+
+        <div class="stat">
+            <h2>25+</h2>
+            <p>Professional Chefs</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- section newsletter -->
+
+<section class="newsletter-section">
+    <div class="newsletter-content">
+
+        <div class="newsletter-label">NEWSLETTER</div>
+
+        <h1>Subscribe our newsletter</h1>
+
+        <p>Fresh Ingredients • Authentic Taste • Cozy Atmosphere</p>
+
+       
+        <form class="newsletter-form" id="newsletterForm">
+            <input 
+                type="email" 
+                id="emailInput"
+                placeholder="Enter your email"
+                required
+            >
+            <button type="submit">SUBSCRIBE</button>
+        </form>
+
+       
+        <p id="message" style="margin-top:15px; font-size:16px;"></p>
+
+    </div>
+</section>
+
+<!-- section event -->
+
+<section class="private-events">
+
+    <div class="events-container">
+
+        <!-- Left Image -->
+        <div class="events-image">
+            <img src="./image/about.webp" alt="Private Event">
+        </div>
+
+        <!-- Right Content -->
+        <div class="events-content">
+            <span class="events-label">PRIVATE EVENTS</span>
+            <h2>Host Your Special Moments With Us</h2>
+            <p>
+                Celebrate birthdays, anniversaries, corporate gatherings,
+                and special occasions in a warm and elegant atmosphere.
+                Our team ensures unforgettable dining experiences.
+            </p>
+
+            <div class="events-types">
+                <div class="event-box">
+                    <h4>Birthday Parties</h4>
+                    <p>Make your celebration memorable with custom décor and delicious menus.</p>
+                </div>
+
+                <div class="event-box">
+                    <h4>Corporate Meetings</h4>
+                    <p>Professional environment with premium dining and privacy.</p>
+                </div>
+
+                <div class="event-box">
+                    <h4>Family Gatherings</h4>
+                    <p>Spacious seating and authentic flavors for every generation.</p>
+                </div>
+
+                <div class="event-box">
+                    <h4>Anniversaries</h4>
+                    <p>Romantic ambiance and curated dining experiences.</p>
+                </div>
+            </div>
+
+            <a href="#" class="event-btn">Book Private Event</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- section tesimonial -->
+
+<section class="testimonial-section">
+    <div class="container">
+
+        <div class="section-header">
+            <span>TESTIMONIALS</span>
+            <h2>What Our Customers Say</h2>
+            <p>We love serving happiness. Here’s what our guests say about us.</p>
+        </div>
+
+        <div class="testimonial-wrapper">
+
+            <!-- Card 1 -->
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    Amazing food and excellent service! The ambience was perfect
+                    for a family dinner. Highly recommended for spicy lovers.
+                </p>
+                <div class="user">
+                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="">
+                    <div>
+                        <h4>Priya Sharma</h4>
+                        <span>Food Blogger</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    The taste was authentic and fresh. Staff were friendly and
+                    quick. One of the best restaurants in town!
+                </p>
+                <div class="user">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                    <div>
+                        <h4>Rahul Verma</h4>
+                        <span>Businessman</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    Loved the presentation and quality. The spicy chicken
+                    varieties were outstanding. Will visit again soon!
+                </p>
+                <div class="user">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="">
+                    <div>
+                        <h4>Anjali Mehta</h4>
+                        <span>Designer</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    A wonderful dining experience. Clean environment and
+                    delicious desserts. Perfect place for celebrations.
+                </p>
+                <div class="user">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="">
+                    <div>
+                        <h4>Arun Kumar</h4>
+                        <span>Entrepreneur</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- section footer -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- About -->
+        <div class="footer-col">
+            <h3>Cozy Spice House</h3>
+            <p>
+                Experience authentic flavors, fresh ingredients, and a warm
+                atmosphere. We serve happiness with every plate.
+            </p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+            <h4>Our Services</h4>
+            <ul>
+                <li><a href="#">Dine In</a></li>
+                <li><a href="#">Online Order</a></li>
+                <li><a href="#">Home Delivery</a></li>
+                <li><a href="#">Catering Service</a></li>
+                <li><a href="#">Private Events</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col">
+            <h4>Contact Info</h4>
+            <p><strong>Address:</strong> 123 Food Street, Salem</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Email:</strong> info@cozyspice.com</p>
+
+            <h4 class="mt">Opening Hours</h4>
+            <p>Mon - Fri: 10:00 AM - 10:00 PM</p>
+            <p>Sat - Sun: 11:00 AM - 11:30 PM</p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>Subscribe to get special offers & updates.</p>
+            <form class="footer-newsletter">
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        <p>© 2026 Cozy Spice House. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+    <script>
+
+        const slides = document.querySelectorAll(".slide");
+        let current = 0;
+
+        function changeSlide() {
+            slides[current].classList.remove("active");
+            current = (current + 1) % slides.length;
+            slides[current].classList.add("active");
+        }
+
+        setInterval(changeSlide, 5000); // Change every 5 seconds
+
+    </script>
+
+
+
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector(".nav-menu");
+
+        toggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>

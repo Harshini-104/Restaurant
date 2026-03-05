@@ -22,6 +22,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Original+Surfer&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amarante&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Original+Surfer&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
@@ -71,9 +89,9 @@
 
             <div class="slide active" style="background-image: url('./image/main1.webp');">
                 <div class="hero-content">
-                    <p>Spicy Dinner</p>
-                    <h1>Hot & Spicy Chicken Varieties</h1>
-                    <h3>Where Spice Meets Perfection...
+                    <p data-aos="zoom-in">Spicy Dinner</p>
+                    <h1 data-aos="zoom-in">Hot & Spicy Chicken Varieties</h1>
+                    <h3">Where Spice Meets Perfection...
                         A Fiery Feast for True Food Lovers</h3>
 
                 </div>
@@ -81,15 +99,15 @@
 
             <div class="slide" style="background-image: url('./image/main2.webp');">
                 <div class="hero-content">
-                    <h1>Fresh & Organic</h1>
-                    <p>Healthy food made with love</p>
+                    <h1 data-aos="zoom-in">Fresh & Organic</h1>
+                    <p data-aos="zoom-in">Healthy food made with love</p>
                 </div>
             </div>
 
             <div class="slide" style="background-image: url('./image/main3.webp');">
                 <div class="hero-content">
-                    <h1>Luxury Dining</h1>
-                    <p>Where flavor meets elegance</p>
+                    <h1 data-aos="zoom-in">Luxury Dining</h1>
+                    <p data-aos="zoom-in">Where flavor meets elegance</p>
                 </div>
             </div>
 
@@ -107,14 +125,14 @@
 
     <!-- section popular dish -->
 
-    <section class="popular-dishes">
-        <h2 class="section-title"><span class="span">Popular Dishes Of</span><br>Our Restaurant</h2>
+    <section class="popular-dishes" id="dish">
+        <h2 class="section-title" data-aos="zoom-in"><span class="span">Popular Dishes Of</span><br>Our Restaurant</h2>
 
 
         <div class="dishes-wrapper">
             <div class="dishes-scroll">
 
-                <div class="dish-card">
+                <div class="dish-card" data-aos="zoom-in">
                     <img src="./image/grill.webp" alt="Dish 1">
                     <div class="overlay">
                         <h3>Grilled Chicken</h3>
@@ -122,7 +140,7 @@
                     </div>
                 </div>
 
-                <div class="dish-card">
+                <div class="dish-card" data-aos="zoom-in">
                     <img src="./image/pizza.webp" alt="Dish 2">
                     <div class="overlay">
                         <h3>Veg Pizza</h3>
@@ -130,7 +148,7 @@
                     </div>
                 </div>
 
-                <div class="dish-card">
+                <div class="dish-card" data-aos="zoom-in">
                     <img src="./image/burger.webp" alt="Dish 3">
                     <div class="overlay">
                         <h3>Burger Combo</h3>
@@ -138,7 +156,7 @@
                     </div>
                 </div>
 
-                <div class="dish-card">
+                <div class="dish-card" data-aos="zoom-in">
                     <img src="./image/pasta.webp" alt="Dish 4">
                     <div class="overlay">
                         <h3>Pasta Delight</h3>
@@ -146,7 +164,7 @@
                     </div>
                 </div>
 
-                <div class="dish-card">
+                <div class="dish-card" data-aos="zoom-in">
                     <img src="./image/fried-rice.webp" alt="Dish 5">
                     <div class="overlay">
                         <h3>Fried Rice</h3>
@@ -154,7 +172,7 @@
                     </div>
                 </div>
 
-                <div class="dish-card">
+                <div class="dish-card" data-aos="zoom-in">
                     <img src="./image/paneer.webp" alt="Dish 6">
                     <div class="overlay">
                         <h3>Paneer Tikka</h3>
@@ -162,7 +180,7 @@
                     </div>
                 </div>
 
-                <div class="dish-card">
+                <div class="dish-card" data-aos="zoom-in">
                     <img src="./image/wings.webp" alt="Dish 7">
                     <div class="overlay">
                         <h3>BBQ Wings</h3>
@@ -170,7 +188,7 @@
                     </div>
                 </div>
 
-                <div class="dish-card">
+                <div class="dish-card" data-aos="zoom-in">
                     <img src="./image/naan.webp" alt="Dish 8">
                     <div class="overlay">
                         <h3>Garlic Naan</h3>
@@ -182,18 +200,103 @@
         </div>
     </section>
 
+    <!-- section reserve table -->
+
+    <section class="reservation-section" id="table">
+    <div class="reservation-container">
+
+        <div class="reservation-image" data-aos="zoom-in">
+            <img src="./image/cocktail.webp" alt="Restaurant">
+        </div>
+
+        
+        <div class="reservation-form">
+            <h2 data-aos="fade-up">Reserve Your Table</h2>
+
+            <form id="reservationForm">
+
+                <div class="form-group" data-aos="fade-up">
+                    <input type="text" id="name" placeholder="Your Name">
+                </div>
+
+                <div class="form-group" data-aos="fade-up">
+                    <input type="email" id="email" placeholder="Your Email">
+                </div>
+
+                <div class="form-group" data-aos="fade-up">
+                    <input type="tel" id="phone" placeholder="Phone Number">
+                </div>
+
+                <div class="form-group" data-aos="fade-up">
+                    <input type="date" id="date">
+                </div>
+
+                <div class="form-group" data-aos="fade-up">
+                    <input type="time" id="time">
+                </div>
+
+                <div class="form-group" data-aos="fade-up">
+                    <select id="guests">
+                        <option value="">Number of Guests</option>
+                        <option>1 Person</option>
+                        <option>2 People</option>
+                        <option>3 People</option>
+                        <option>4 People</option>
+                        <option>5+ People</option>
+                    </select>
+                </div>
+
+                <div class="form-group" data-aos="fade-up">
+                    <textarea id="message" rows="3" placeholder="Special Request (Optional)"></textarea>
+                </div>
+
+                <button type="submit" class="btn" data-aos="fade-up">Book Now</button>
+
+                <div class="success-message" id="successMessage"></div>
+
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+<script>
+document.getElementById("reservationForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    let date = document.getElementById("date").value;
+    let time = document.getElementById("time").value;
+    let guests = document.getElementById("guests").value;
+
+    if(name === "" || email === "" || phone === "" || date === "" || time === "" || guests === ""){
+        alert("Please fill all required fields!");
+        return;
+    }
+
+    document.getElementById("successMessage").innerHTML =
+        "🎉 Table Reserved Successfully! We will contact you soon.";
+
+    document.getElementById("reservationForm").reset();
+});
+</script>
+
+
     <!-- section offer -->
 
-    <section class="offer-section">
+    <section class="offer-section" id="offer">
         <div class="offer-content">
-            <h4>Upto 25% off</h4>
-            <h1>On Italian, Mexican, And Indian Cuisine</h1>
-            <p>
+            <h4 data-aos="zoom-in">Upto 25% off</h4>
+            <h1 data-aos="zoom-in">On Italian, Mexican, And Indian Cuisine</h1>
+            <p data-aos="zoom-in">
                 Enjoy delicious flavors crafted by our expert chefs.
                 Experience authentic taste with premium ingredients and
                 a fine dining atmosphere made just for you.
             </p>
-            <a href="#" class="offer-btn">Grab Your Offer</a>
+            <a href="./error.html" class="offer-btn" data-aos="zoom-in">Grab Your Offer</a>
         </div>
     </section>
 
@@ -202,15 +305,15 @@
 
     <section class="favorite-section">
 
-        <p class="small-title">Favorite Items</p>
-        <h2 class="main-title">For Unique Dining</h2>
+        <p class="small-title" data-aos="zoom-in">Favorite Items</p>
+        <h2 class="main-title" data-aos="zoom-in">For Unique Dining</h2>
 
 
         <div class="category-buttons">
-            <button class="category" data-category="asian">Asian</button>
-            <button class="category" data-category="italian">Italian</button>
-            <button class="category" data-category="chinese">Chinese</button>
-            <button class="category" data-category="american">American</button>
+            <button class="category" data-category="asian" data-aos="zoom-in">Asian</button>
+            <button class="category" data-category="italian" data-aos="zoom-in">Italian</button>
+            <button class="category" data-category="chinese" data-aos="zoom-in">Chinese</button>
+            <button class="category" data-category="american" data-aos="zoom-in">American</button>
         </div>
 
 
@@ -224,310 +327,382 @@
     <!-- section image -->
 
     <section class="scroll-gallery">
-    <div class="scroll-track">
+        <div class="scroll-track">
 
-        <img src="./image/alfredo.webp" alt="Gallery image">
-        <img src="./image/carbonara.webp" alt="Gallery image">
-        <img src="./image/fried-rice.webp" alt="Gallery image">
-        <img src="./image/grill.webp" alt="Gallery image">
-        <img src="./image/gnocchi.webp" alt="Gallery image">
-        <img src="./image/lasagna.webp" alt="Gallery image">
-        <img src="./image/naan.webp" alt="Gallery image">
-        <img src="./image/wings.webp" alt="Gallery image">
-        <img src="./image/rolls.webp" alt="Gallery image">
-        <img src="./image/burger.webp" alt="Gallery image">
-        <img src="./image/bun.webp" alt="Gallery image">
-        <img src="./image/milkshake.webp" alt="Gallery image">
+            <img src="./image/alfredo.webp" alt="Gallery image">
+            <img src="./image/carbonara.webp" alt="Gallery image">
+            <img src="./image/fried-rice.webp" alt="Gallery image">
+            <img src="./image/grill.webp" alt="Gallery image">
+            <img src="./image/gnocchi.webp" alt="Gallery image">
+            <img src="./image/lasagna.webp" alt="Gallery image">
+            <img src="./image/naan.webp" alt="Gallery image">
+            <img src="./image/wings.webp" alt="Gallery image">
+            <img src="./image/rolls.webp" alt="Gallery image">
+            <img src="./image/burger.webp" alt="Gallery image">
+            <img src="./image/bun.webp" alt="Gallery image">
+            <img src="./image/milkshake.webp" alt="Gallery image">
 
 
-        <img src="./image/alfredo.webp" alt="Gallery image">
-        <img src="./image/carbonara.webp" alt="Gallery image">
-        <img src="./image/fried-rice.webp" alt="Gallery image">
-        <img src="./image/grill.webp" alt="Gallery image">
-        <img src="./image/gnocchi.webp" alt="Gallery image">
-        <img src="./image/lasagna.webp" alt="Gallery image">
-        <img src="./image/naan.webp" alt="Gallery image">
-        <img src="./image/wings.webp" alt="Gallery image">
-        <img src="./image/rolls.webp" alt="Gallery image">
-        <img src="./image/burger.webp" alt="Gallery image">
-        <img src="./image/bun.webp" alt="Gallery image">
-        <img src="./image/milkshake.webp" alt="Gallery image">
-    </div>
-</section>
+            <img src="./image/alfredo.webp" alt="Gallery image">
+            <img src="./image/carbonara.webp" alt="Gallery image">
+            <img src="./image/fried-rice.webp" alt="Gallery image">
+            <img src="./image/grill.webp" alt="Gallery image">
+            <img src="./image/gnocchi.webp" alt="Gallery image">
+            <img src="./image/lasagna.webp" alt="Gallery image">
+            <img src="./image/naan.webp" alt="Gallery image">
+            <img src="./image/wings.webp" alt="Gallery image">
+            <img src="./image/rolls.webp" alt="Gallery image">
+            <img src="./image/burger.webp" alt="Gallery image">
+            <img src="./image/bun.webp" alt="Gallery image">
+            <img src="./image/milkshake.webp" alt="Gallery image">
+        </div>
+    </section>
 
-<!-- section app store -->
+    <!-- section app store -->
 
-<section class="app-section">
-    <div class="app-container">
+    <section class="app-section" id="app">
+        <div class="app-container">
 
-        <!-- Left Content -->
-        <div class="app-content">
-            <h5>Reach Us</h5>
-            <h2>Get Our Exciting Food Delivery App</h2>
-            <p>
-                Enjoy your favorite dishes delivered straight to your doorstep. 
-                Fresh ingredients, hot meals, and quick delivery service. 
-                Order anytime and experience the best taste with just one tap.
-            </p>
+           
+            <div class="app-content">
+                <h5 data-aos="zoom-in">Reach Us</h5>
+                <h2 data-aos="zoom-in">Get Our Exciting Food Delivery App</h2>
+                <p data-aos="zoom-in">
+                    Enjoy your favorite dishes delivered straight to your doorstep.
+                    Fresh ingredients, hot meals, and quick delivery service.
+                    Order anytime and experience the best taste with just one tap.
+                </p>
 
-            <div class="store-buttons">
-                <a href="./error.html">
-                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
-                </a>
-                <a href="./error.html">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
-                </a>
+                <div class="store-buttons">
+                    <a href="./error.html" data-aos="zoom-in">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                            alt="App Store">
+                    </a>
+                    <a href="./error.html" data-aos="zoom-in">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                            alt="Google Play">
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="app-image" data-aos="zoom-in">
+                <img src="./image/phone.webp" alt="Food App Phone">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- section events -->
+
+    <section class="news-section">
+        <div class="container">
+
+            <div class="section-title">
+                <h5 data-aos="zoom-in">News And Events</h5>
+                <h2 data-aos="zoom-in">Latest From Our Restaurant</h2>
+                <p data-aos="zoom-in">
+                    Explore our latest food stories, cooking tips, and restaurant updates.
+                    Stay connected with our delicious journey.
+                </p>
+            </div>
+
+            <div class="news-wrapper">
+                <button class="arrow left" onclick="slideLeft()">&#10094;</button>
+
+                <div class="news-slider" id="newsSlider">
+
+
+                    <div class="news-card" data-aos="zoom-in">
+                        <img src="./image/fish.webp" alt="">
+                        <div class="news-content">
+                            <span>Jun 21 | Viyaan</span>
+                            <h3>What are most common food handling mistakes?</h3>
+                            <p>Learn the important safety measures every kitchen must follow.</p>
+                            <a href="./error.html">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-aos="zoom-in">
+                        <img src="./image/dish.webp" alt="">
+                        <div class="news-content">
+                            <span>Mar 9 | Riya</span>
+                            <h3>Explore new dishes and menus with besties</h3>
+                            <p>Discover exciting new flavors crafted by our expert chefs.</p>
+                            <a href="./error.html">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-aos="zoom-in">
+                        <img src="./image/fried-rice.webp" alt="">
+                        <div class="news-content">
+                            <span>Apr 10 | Mathew</span>
+                            <h3>What gives good atmosphere for a restaurant?</h3>
+                            <p>Ambience, lighting and music create memorable dining moments.</p>
+                            <a href="./error.html">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-aos="zoom-in">
+                        <img src="./image/grill.webp" alt="">
+                        <div class="news-content">
+                            <span>Jun 30 | John</span>
+                            <h3>The ultimate guide to cook international style foods</h3>
+                            <p>Master global cuisines with our professional tips.</p>
+                            <a href="./error.html">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-aos="zoom-in"> 
+                        <img src="./image/soup.webp" alt="">
+                        <div class="news-content">
+                            <span>Jun 30 | Viky</span>
+                            <h3>How to learn advanced cooking techniques</h3>
+                            <p>Upgrade your culinary skills like a professional chef.</p>
+                            <a href="./error.html">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-aos="zoom-in">
+                        <img src="./image/rolls.webp" alt="">
+                        <div class="news-content">
+                            <span>Dec 15 | Priya</span>
+                            <h3>The health benefits of eating Italian food</h3>
+                            <p>Italian cuisine offers both flavor and nutrition.</p>
+                            <a href="./error.html">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-aos="zoom-in">
+                        <img src="./image/prawn.webp" alt="">
+                        <div class="news-content">
+                            <span>Sep 25 | Arjun</span>
+                            <h3>How prawn pasta is made & is it good for kids?</h3>
+                            <p>Step-by-step recipe and nutrition facts explained.</p>
+                            <a href="./error.html">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-aos="zoom-in">
+                        <img src="./image/pizza.webp" alt="">
+                        <div class="news-content">
+                            <span>Dec 9 | Kavin</span>
+                            <h3>10 Classic and simple meat lasagna recipes</h3>
+                            <p>Traditional Italian recipes you can try at home.</p>
+                            <a href="./error.html">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="arrow right" onclick="slideRight()">&#10095;</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        const newsSlider = document.getElementById("newsSlider");
+
+        function slideRight() {
+            const cardWidth = newsSlider.querySelector(".news-card").offsetWidth + 30;
+            newsSlider.scrollBy({
+                left: cardWidth,
+                behavior: "smooth"
+            });
+        }
+
+        function slideLeft() {
+            const cardWidth = newsSlider.querySelector(".news-card").offsetWidth + 30;
+            newsSlider.scrollBy({
+                left: -cardWidth,
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+    <!-- section review -->
+
+    <section class="review-section">
+        <div class="review-container">
+
+            <h5 data-aos="zoom-in">Customer Reviews</h5>
+            <h2 data-aos="zoom-in">What Our Guests Say</h2>
+
+            <div class="review-slider" id="reviewSlider">
+
+
+                <div class="review-card">
+                    <p>“The food was absolutely amazing from start to finish.
+                        The chicken was perfectly cooked, juicy, and full of flavor.
+                        You can really taste the freshness in every bite.
+                        Highly recommended for spice lovers!”</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>Priya Sharma</h4>
+                </div>
+
+
+                <div class="review-card">
+                    <p>“I ordered the hot & spicy chicken combo and it exceeded my expectations.
+                        The portion size was generous and worth the price.
+                        Delivery was quick and the food arrived hot.
+                        Definitely ordering again soon!”</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>Rahul Verma</h4>
+                </div>
+
+
+                <div class="review-card">
+                    <p>“This place never disappoints.
+                        The flavors are bold, authentic, and perfectly balanced.
+                        The ambiance is cozy and welcoming.
+                        A great spot for family dinners and casual hangouts.”</p>
+                    <div class="stars">★★★★☆</div>
+                    <h4>Anjali Menon</h4>
+                </div>
+
+
+                <div class="review-card">
+                    <p>“One of the best dining experiences I've had recently.
+                        The spices were blended perfectly without being overpowering.
+                        Customer service was friendly and attentive.
+                        Loved every single bite!”</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>Arun Kumar</h4>
+                </div>
+
+
+                <div class="review-card">
+                    <p>“The crispy texture on the outside and juicy inside was just perfect.
+                        You can tell they use high-quality ingredients.
+                        Everything tasted fresh and well-prepared.
+                        A must-visit restaurant for food lovers.”</p>
+                    <div class="stars">★★★★☆</div>
+                    <h4>Sneha Reddy</h4>
+                </div>
+
+
+                <div class="review-card">
+                    <p>“I'm very impressed with the quality and taste.
+                        The menu offers a great variety of spicy dishes.
+                        The staff was polite and helpful throughout our visit.
+                        Will surely recommend this place to my friends.”</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>Karthik Raj</h4>
+                </div>
+
+
+                <div class="review-card">
+                    <p>“From ordering to delivery, everything was smooth.
+                        The packaging kept the food warm and fresh.
+                        The flavors were rich and satisfying.
+                        Truly a five-star experience!”</p>
+                    <div class="stars">★★★★☆</div>
+                    <h4>Divya Nair</h4>
+                </div>
+
+
+                <div class="review-card">
+                    <p>“The perfect place if you love bold and spicy flavors.
+                        Every dish we tried was cooked to perfection.
+                        The presentation was also beautiful.
+                        Can't wait to visit again!”</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>Vikram Singh</h4>
+                </div>
+
             </div>
         </div>
-
-        
-        <div class="app-image">
-            <img src="./image/phone.webp" alt="Food App Phone">
-        </div>
-
-    </div>
-</section>
+    </section>
 
 
-<!-- section events -->
+    <!-- section footer -->
 
-<section class="news-section">
-    <div class="container">
-
-        <div class="section-title">
-            <h5>News And Events</h5>
-            <h2>Latest From Our Restaurant</h2>
-            <p>
-                Explore our latest food stories, cooking tips, and restaurant updates.
-                Stay connected with our delicious journey.
-            </p>
-        </div>
-
-        <div class="news-wrapper">
-            <button class="arrow left" onclick="slideLeft()">&#10094;</button>
-
-            <div class="news-slider" id="newsSlider">
+     <footer class="footer">
+        <div class="container">
+            
+            <div class="subscribe-section">
+                <h3 data-aos="zoom-in"><i class="fas fa-envelope"></i> Stay Updated with Our Latest Offers</h3>
+                <p data-aos="zoom-in">Subscribe to our newsletter for exclusive recipes, events, and special discounts.</p>
+                <form class="subscribe-form" onsubmit="return false;" data-aos="zoom-in">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+                </form>
+            </div>
 
             
-                <div class="news-card">
-                    <img src="./image/fish.webp" alt="">
-                    <div class="news-content">
-                        <span>Jun 21 | Viyaan</span>
-                        <h3>What are most common food handling mistakes?</h3>
-                        <p>Learn the important safety measures every kitchen must follow.</p>
-                        <a href="./error.html">Read More</a>
-                    </div>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href=""><img src="./image/logo-removebg-preview.webp" alt=""></a>
+                    <p class="para">Discover authentic flavors at our family-owned restaurant, serving Chennai's finest cuisine since 2010.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
                 </div>
 
-                <div class="news-card">
-                    <img src="./image/dish.webp" alt="">
-                    <div class="news-content">
-                        <span>Mar 9 | Riya</span>
-                        <h3>Explore new dishes and menus with besties</h3>
-                        <p>Discover exciting new flavors crafted by our expert chefs.</p>
-                        <a href="./error.html">Read More</a>
+                <div class="footer-column">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="./index.html#dish">Popular Dish</a></li>
+                        <li><a href="./index.html#offer">Offer</a></li>
+                        <li><a href="./index.html#table">Reserve Table</a></li>
+                        <li><a href="./about.html#history">History</a></li>
+                        <li><a href="./index.html#app">Get App</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-phone"></i> Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Chennai, Tamil Nadu, India</p>
+                        <p><i class="fas fa-phone"></i> +91 12345 67890</p>
+                        <p><i class="fas fa-envelope"></i> stackly@restaurant.com</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="./error.html"><i class="fab fa-facebook-f"></i></a>
+                        <a href="./error.html"><i class="fab fa-instagram"></i></a>
+                        <a href="./error.html"><i class="fab fa-twitter"></i></a>
+                        <a href="./error.html"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-
-                <div class="news-card">
-                    <img src="./image/fried-rice.webp" alt="">
-                    <div class="news-content">
-                        <span>Apr 10 | Mathew</span>
-                        <h3>What gives good atmosphere for a restaurant?</h3>
-                        <p>Ambience, lighting and music create memorable dining moments.</p>
-                        <a href="./error.html">Read More</a>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="./image/grill.webp" alt="">
-                    <div class="news-content">
-                        <span>Jun 30 | John</span>
-                        <h3>The ultimate guide to cook international style foods</h3>
-                        <p>Master global cuisines with our professional tips.</p>
-                        <a href="./error.html">Read More</a>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="./image/soup.webp" alt="">
-                    <div class="news-content">
-                        <span>Jun 30 | Viky</span>
-                        <h3>How to learn advanced cooking techniques</h3>
-                        <p>Upgrade your culinary skills like a professional chef.</p>
-                        <a href="./error.html">Read More</a>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="./image/rolls.webp" alt="">
-                    <div class="news-content">
-                        <span>Dec 15 | Priya</span>
-                        <h3>The health benefits of eating Italian food</h3>
-                        <p>Italian cuisine offers both flavor and nutrition.</p>
-                        <a href="./error.html">Read More</a>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="./image/prawn.webp" alt="">
-                    <div class="news-content">
-                        <span>Sep 25 | Arjun</span>
-                        <h3>How prawn pasta is made & is it good for kids?</h3>
-                        <p>Step-by-step recipe and nutrition facts explained.</p>
-                        <a href="./error.html">Read More</a>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="./image/pizza.webp" alt="">
-                    <div class="news-content">
-                        <span>Dec 9 | Kavin</span>
-                        <h3>10 Classic and simple meat lasagna recipes</h3>
-                        <p>Traditional Italian recipes you can try at home.</p>
-                        <a href="./error.html">Read More</a>
-                    </div>
-                </div>
-
             </div>
 
-            <button class="arrow right" onclick="slideRight()">&#10095;</button>
+            
+            <div class="logo-section">
+                <p>&copy; 2026 Stackly Restaurant. All rights reserved.</i></p>
+            </div>
         </div>
+    </footer>
 
-    </div>
-</section>
+    <script>
+        const reviewSlider = document.getElementById("reviewSlider");
+        const totalSlides = reviewSlider.children.length;
+
+        let reviewIndex = 0;
+
+        function showReview() {
+            reviewSlider.style.transform = `translateX(-${reviewIndex * 100}%)`;
+        }
+
+        setInterval(() => {
+            reviewIndex++;
+            if (reviewIndex >= totalSlides) {
+                reviewIndex = 0;
+            }
+            showReview();
+        }, 3000);
+    </script>
 
 
-<!-- section review -->
 
-<section class="review-section">
-    <div class="review-container">
 
-        <h5>Customer Reviews</h5>
-        <h2>What Our Guests Say</h2>
-
-        <div class="review-slider" id="reviewSlider">
-
-            <!-- Review 1 -->
-            <div class="review-card">
-                <p>"Absolutely delicious food and amazing service. Highly recommended!"</p>
-                <div class="stars">★★★★★</div>
-                <h4>Priya Sharma</h4>
-            </div>
-
-            <!-- Review 2 -->
-            <div class="review-card">
-                <p>"The ambience was beautiful and the pasta tasted authentic."</p>
-                <div class="stars">★★★★★</div>
-                <h4>Rahul Verma</h4>
-            </div>
-
-            <!-- Review 3 -->
-            <div class="review-card">
-                <p>"Best biryani in town! Loved the quick delivery service."</p>
-                <div class="stars">★★★★☆</div>
-                <h4>Anjali Menon</h4>
-            </div>
-
-            <!-- Review 4 -->
-            <div class="review-card">
-                <p>"The desserts were heavenly and presentation was perfect."</p>
-                <div class="stars">★★★★★</div>
-                <h4>Arun Kumar</h4>
-            </div>
-
-            <!-- Review 5 -->
-            <div class="review-card">
-                <p>"Very friendly staff and cozy atmosphere."</p>
-                <div class="stars">★★★★☆</div>
-                <h4>Sneha Reddy</h4>
-            </div>
-
-            <!-- Review 6 -->
-            <div class="review-card">
-                <p>"Loved the seafood platter. Fresh and flavorful."</p>
-                <div class="stars">★★★★★</div>
-                <h4>Karthik Raj</h4>
-            </div>
-
-            <!-- Review 7 -->
-            <div class="review-card">
-                <p>"Affordable prices and great taste. Will visit again."</p>
-                <div class="stars">★★★★☆</div>
-                <h4>Divya Nair</h4>
-            </div>
-
-            <!-- Review 8 -->
-            <div class="review-card">
-                <p>"Five-star experience from start to finish."</p>
-                <div class="stars">★★★★★</div>
-                <h4>Vikram Singh</h4>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<script>
-const slider = document.getElementById('reviewSlider');
-
-let isDown = false;
-let startX;
-let scrollLeft;
-let index = 0;
-const totalSlides = slider.children.length;
-
-slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    startX = e.pageX;
-});
-
-slider.addEventListener('mouseleave', () => {
-    isDown = false;
-});
-
-slider.addEventListener('mouseup', (e) => {
-    if (!isDown) return;
-    isDown = false;
-    let move = e.pageX - startX;
-
-    if (move < -50 && index < totalSlides - 1) {
-        index++;
-    } else if (move > 50 && index > 0) {
-        index--;
-    }
-
-    slider.style.transform = `translateX(-${index * 100}%)`;
-});
-
-slider.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].clientX;
-});
-
-slider.addEventListener('touchend', (e) => {
-    let move = e.changedTouches[0].clientX - startX;
-
-    if (move < -50 && index < totalSlides - 1) {
-        index++;
-    } else if (move > 50 && index > 0) {
-        index--;
-    }
-
-    slider.style.transform = `translateX(-${index * 100}%)`;
-});
-</script>
-
-<script>
-const slider = document.getElementById("newsSlider");
-
-function slideLeft() {
-    slider.scrollLeft -= 350;
-}
-
-function slideRight() {
-    slider.scrollLeft += 350;
-}
-</script>
 
     <script>
         const dishesData = {
@@ -680,6 +855,16 @@ function slideRight() {
         toggle.addEventListener("click", () => {
             navMenu.classList.toggle("active");
         });
+    </script>
+
+    <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+         once: false,
+        mirror:true,
+      });
     </script>
 
 </body>
