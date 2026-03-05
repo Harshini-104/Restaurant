@@ -25,6 +25,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Amarante&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Original+Surfer&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
@@ -66,9 +81,9 @@
     <section class="menu-hero">
         <div class="menu-hero-content">
 
-            <h1>Our Delicious Menu</h1>
+            <h1 data-aos="zoom-in">Our Delicious Menu</h1>
 
-            <p>
+            <p data-aos="zoom-in">
                 Explore our carefully crafted dishes made with fresh ingredients,
                 bold flavors, and passion. From spicy starters to delightful desserts,
                 there’s something for everyone.
@@ -82,24 +97,24 @@
     
 <!-- HEADER -->
 <div class="header">
-    <div class="logo">SpicyBite</div>
+    <div class="logo" data-aos="zoom-in">Special Menu</div>
 
-    <div class="search-box">
+    <div class="search-box" data-aos="zoom-in">
         <input type="text" id="searchInput" placeholder="Search dishes...">
     </div>
 
-    <div class="cart" onclick="toggleCart()">
+    <div class="cart" onclick="toggleCart()" data-aos="zoom-in">
         <i class="fa fa-shopping-cart"></i>
         <div class="cart-count" id="cartCount">0</div>
     </div>
 </div>
 
-<!-- MENU -->
+
 <section class="menu-section">
-    <div class="menu-grid" id="menuGrid"></div>
+    <div class="menu-grid" id="menuGrid" data-aos="zoom-in"></div>
 </section>
 
-<!-- CART SIDEBAR -->
+
 <div class="cart-sidebar" id="cartSidebar">
     <div class="cart-header">
         <h2>Your Cart</h2>
@@ -113,25 +128,100 @@
     </div>
 </div>
 
+<footer class="footer">
+
+        <div class="footer-container">
+
+           
+            <div class="footer-col">
+                <a href=""><div class="image"><img src="./image/logo-removebg-preview.webp" alt=""></div></a>
+                <p>
+                    Experience authentic flavors, fresh ingredients, and a warm
+                    atmosphere. We serve happiness with every plate.
+                </p>
+
+                <div class="social-icons">
+                    <a href="./error2.html"><i class="fab fa-facebook-f"></i></a>
+                    <a href="./error2.html"><i class="fab fa-instagram"></i></a>
+                    <a href="./error2.html"><i class="fab fa-twitter"></i></a>
+                    <a href="./error2.html"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./home2.html">Home</a></li>
+                    <li><a href="./about2.html">About</a></li>
+                    <li><a href="./menu2.html">Menu</a></li>
+                    <li><a href="./blog2.html">Blog</a></li>
+                    <li><a href="./contact2.html">Contact</a></li>
+                </ul>
+            </div>
+
+          
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="./about2.html#dine">Dine In</a></li>
+                    <li><a href="./about2.html#online">Online Order</a></li>
+                    <li><a href="./about2.html#home">Home Delivery</a></li>
+                    <li><a href="./home2.html#test">Testimonials</a></li>
+                    <li><a href="./home2.html#private">Private Events</a></li>
+                </ul>
+            </div>
+
+           
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><strong>Address:</strong> 123 Food Street, Salem</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Email:</strong> info@cozyspice.com</p>
+
+                <h4 class="mt">Opening Hours</h4>
+                <p>Mon - Fri: 10:00 AM - 10:00 PM</p>
+                <p>Sat - Sun: 11:00 AM - 11:30 PM</p>
+            </div>
+
+          
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe to get special offers & updates.</p>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p>© 2026 Cozy Spice House. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
 <script>
 
 const dishes = [
-    {name:"Chicken Biryani", price:250},
-    {name:"Mutton Curry", price:320},
-    {name:"Paneer Butter Masala", price:220},
-    {name:"Grilled Chicken", price:280},
-    {name:"Veg Fried Rice", price:180},
-    {name:"Chicken Noodles", price:190},
-    {name:"Pizza Margherita", price:299},
-    {name:"Burger Combo", price:199},
-    {name:"Tandoori Chicken", price:350},
-    {name:"Fish Fry", price:270},
-    {name:"Masala Dosa", price:120},
-    {name:"Idli Sambar", price:80},
-    {name:"Pasta Alfredo", price:240},
-    {name:"Chocolate Cake", price:150},
-    {name:"Ice Cream Sundae", price:130},
-    {name:"Fresh Lime Juice", price:60}
+    {name:"Chicken Biryani", price:250, image:"./image/biriyani.webp"},
+    {name:"Mutton Curry", price:320, image:"./image/curry.webp"},
+    {name:"Paneer Butter Masala", price:220, image:"./image/naan.webp"},
+    {name:"Grilled Chicken", price:280, image:"./image/grill.webp"},
+    {name:"Veg Fried Rice", price:180, image:"./image/fried-rice.webp"},
+    {name:"Chicken Noodles", price:190, image:"./image/egg.webp"},
+    {name:"Pizza Margherita", price:299, image:"./image/pizza.webp"},
+    {name:"Burger Combo", price:199, image:"./image/burger.webp"},
+    {name:"Tandoori Chicken", price:350, image:"./image/tandoori.webp"},
+    {name:"Fish Fry", price:270, image:"./image/fish.webp"},
+    {name:"Masala Dosa", price:120, image:"./image/dosa.webp"},
+    {name:"Idli Sambar", price:80, image:"./image/idly.webp"},
+    {name:"Pasta Alfredo", price:240, image:"./image/pasta.webp"},
+    {name:"Chocolate Cake", price:150, image:"./image/tiramisu.webp"},
+    {name:"Ice Cream Sundae", price:130, image:"./image/ice.webp"},
+    {name:"Fresh Lime Juice", price:60, image:"./image/margarita.webp"}
 ];
 
 const menuGrid = document.getElementById("menuGrid");
@@ -148,7 +238,7 @@ function displayMenu(items){
     items.forEach((dish,index)=>{
         menuGrid.innerHTML += `
             <div class="menu-card">
-                <img src="https://source.unsplash.com/400x300/?food,${index}" />
+                <img src="${dish.image}" alt="${dish.name}" />
                 <div class="menu-content">
                     <h3>${dish.name}</h3>
                     <div class="price">₹${dish.price}</div>
@@ -216,6 +306,16 @@ document.getElementById("searchInput").addEventListener("keyup",function(){
 displayMenu(dishes);
 
 </script>
+
+  <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+         once: false,
+        mirror:true,
+      });
+    </script>
 
 
 
